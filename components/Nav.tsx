@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Home, Users, BarChart2 } from "lucide-react";
 import logo from "@/public/logo.svg";
 import Image from "next/image";
 import { MdOutlineTimeline, MdOutlineSync } from "react-icons/md";
