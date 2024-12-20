@@ -57,7 +57,7 @@ export function useTrading() {
     'wss://stream.binance.com:9443/ws/btcusdt@trade',
     {
       onError: (event) => console.error('WebSocket error:', event),
-      shouldReconnect: (closeEvent) => true,
+      shouldReconnect: () => true, // Removed unused closeEvent
       reconnectInterval: 3000,
     }
   );
@@ -98,7 +98,7 @@ export function useTrading() {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [store]);  // Added store as a dependency
 
   return store;
 }
