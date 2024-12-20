@@ -66,7 +66,7 @@ export default function UserUi() {
     <div className="space-y-8">
       {/* Place New Order Card */}
       <Card className="bg-gray-900 rounded-lg shadow-xl">
-        <div className="flex justify-between items-center ">
+        <div className="flex justify-between items-center pr-5">
           <CardHeader>
             <CardTitle className="text-2xl font-semibold text-blue-400">
               Place New Order
