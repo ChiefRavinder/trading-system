@@ -265,7 +265,7 @@ export default function UserUi() {
         </CardHeader>
         <CardContent>
           <Table className="text-gray-200">
-            <TableCaption>A list of your active orders.</TableCaption>
+            <TableCaption>List of your active orders.</TableCaption>
             <TableHeader>
               <TableRow>
                 <TableHead>Type</TableHead>
@@ -303,7 +303,7 @@ export default function UserUi() {
         </CardHeader>
         <CardContent>
           <Table className="text-gray-200">
-            <TableCaption>A list of your order history.</TableCaption>
+            <TableCaption>List of past orders.</TableCaption>
             <TableHeader>
               <TableRow>
                 <TableHead>Type</TableHead>

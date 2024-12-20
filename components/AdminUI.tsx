@@ -32,15 +32,21 @@ export default function AdminUi() {
     <div className="space-y-8">
       {/* Match Opportunities */}
       <Card className="bg-gray-900 text-white shadow-lg">
-        <CardHeader>
-          <CardTitle className="text-blue-400 text-2xl font-semibold">
+        <div className="flex justify-between items-center px-6 pt-2">
+          <span className="flex text-blue-400 text-2xl font-semibold">
             Match Opportunities
-          </CardTitle>
-        </CardHeader>
+          </span>
+          <div className="flex items-center space-x-2 border-2 border-green-500 rounded-full px-4 py-1">
+            <span className="text-green-500 text-lg font-semibold">
+              {matchedOrders.length}
+            </span>
+            <span className="text-gray-400">Matched</span>
+          </div>
+        </div>
         <CardContent>
           <Table className="w-full text-left border-separate border-spacing-y-3">
             <TableCaption className="text-gray-400">
-              A list of potential trade matches.
+              List of potential trade matches.
             </TableCaption>
             <TableHeader>
               <TableRow className="bg-gray-800">
@@ -95,7 +101,7 @@ export default function AdminUi() {
         <CardContent>
           <Table className="w-full text-left border-separate border-spacing-y-3">
             <TableCaption className="text-gray-400">
-              A list of all active orders.
+              List of active orders.
             </TableCaption>
             <TableHeader>
               <TableRow className="bg-gray-800">
@@ -150,7 +156,7 @@ export default function AdminUi() {
         <CardContent>
           <Table className="w-full text-left border-separate border-spacing-y-3">
             <TableCaption className="text-gray-400">
-              A list of all settled orders.
+              List of settled orders.
             </TableCaption>
             <TableHeader>
               <TableRow className="bg-gray-800">

@@ -10,6 +10,7 @@ export interface Order {
   price: number;
   expiration: Date;
   status: 'active' | 'filled' | 'cancelled' | 'expired';
+  executedPrice?: number; 
 }
 
 interface BinanceTradeMessage {
